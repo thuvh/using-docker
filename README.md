@@ -29,3 +29,12 @@ link to dnmonster image
 working with other name
 use redis to cache image
 
+### Image Distribution
+
+use dockhub to store and distribution image
+automatic build from repository
+
+### Continuous Integration and Testing with Docker
+
+add unit test
+
