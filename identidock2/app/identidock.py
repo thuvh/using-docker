@@ -1,6 +1,7 @@
 import requests
 import hashlib
 import redis
+import html
 
 from flask import Flask, Response, request
 
@@ -13,7 +14,7 @@ cache = redis.StrictRedis(host='redis', port=6379, db=0)
 def index():
     name = default_name
     if request.method == 'POST':
-        name = request.form['name']
+        name = html.escape(request.form['name'], quote=True)
 
     salted_name = salt + name
     hashed_name = hashlib.sha256(salted_name.encode()).hexdigest()
