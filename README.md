@@ -17,6 +17,6 @@ create user and group of uwsgi as usual
 expose port
 run as user 
 
-
- 
 expose and run as user
+-e in docker run to push environment variable to container
+
