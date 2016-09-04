@@ -13,6 +13,10 @@ docker rm $(docker ps -lq)```
 
 stop and remove container
 
+create user and group of uwsgi as usual 
+expose port
+run as user 
 
 
  
+expose and run as user
