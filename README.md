@@ -26,4 +26,5 @@ docker-compose
 
 simple source code in indentidock2
 link to dnmonster image
+working with other name
 
